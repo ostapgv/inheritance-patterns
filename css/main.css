@@ -1,0 +1,28 @@
+div {
+  width: 400px;
+  padding: 5px;
+  margin: 10px auto;
+  border: 2px dashed grey;
+}
+
+h1 {
+  margin: 10px;
+  opacity: 0.5;
+}
+
+p {
+  margin: 5px;
+  color: grey;
+}
+
+div#pseudoclassical {
+  background-color: #FFBFBF;
+}
+
+div#functional {
+  background-color: #FFFFCE;
+}
+
+div#prototypal {
+  background-color: #C1FFC1;
+}
