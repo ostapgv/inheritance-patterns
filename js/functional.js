@@ -1,7 +1,7 @@
 (function(h) {
   'use strict';
-  var Alcohol = function(name) {
-    var _type = "unknown";
+  var Alcohol = function(name, type) {
+    var _type = type || "unknown";
 
     var that = {};
     that.name = "alcohol";
@@ -17,21 +17,11 @@
   };
 
   var Wine = function(name) {
-    var _type = "wine";
-    var that = new Alcohol(name);
-    that.getType = function() {
-      return _type;
-    }
-    return that;
+    return new Alcohol(name, "wine");
   }
 
-  var Beer = function(name) {
-    var _type = "beer";
-    var that = new Alcohol(name);
-    that.getType = function() {
-      return _type;
-    }
-    return that;
+  var Beer = function(name, type) {
+    return new Alcohol(name, "bear");
   }
 
   var wine = Wine("sauvignon");
